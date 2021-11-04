@@ -1,4 +1,6 @@
 com/invoice/Ride.java
  com.invoice.Ride
+com/invoice/InvoiceSummary.java
+ com.invoice.InvoiceSummary
 com/invoice/InvoiceGenerator.java
  com.invoice.InvoiceGenerator

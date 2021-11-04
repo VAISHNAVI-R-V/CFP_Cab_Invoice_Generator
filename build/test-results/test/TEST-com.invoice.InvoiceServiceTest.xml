@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.invoice.InvoiceServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-04T05:38:56" hostname="LAPTOP-GDO34K0C" time="0.089">
+<testsuite name="com.invoice.InvoiceServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-04T06:30:06" hostname="LAPTOP-GDO34K0C" time="0.069">
   <properties/>
-  <testcase name="givenMultipleRides_ShouldReturn_TotalFare()" classname="com.invoice.InvoiceServiceTest" time="0.089"/>
+  <testcase name="givenMultipleRides_ShouldReturn_InvoiceSummary()" classname="com.invoice.InvoiceServiceTest" time="0.069"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

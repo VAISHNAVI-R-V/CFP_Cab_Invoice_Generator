@@ -27,16 +27,17 @@ public class InvoiceGenerator {
 
     /**
      * Purpose : Given distance and time for multiple rides,
-     *           Return aggregate total fare for all the journey.
+     * Return aggregate total fare for all the journey.
      *
      * @param rides : takes multiple rides
      * @return total fare.
      */
-    public double calculateFare(Ride[] rides) {
+    public InvoiceSummary calculateFare(Ride[] rides) {
         double totalFare = 0.0;
-        for(Ride ride : rides) {
+        for (Ride ride : rides) {
             totalFare += this.calculateFare(ride.distance, ride.time);
         }
-        return totalFare;
+        return new InvoiceSummary(rides.length, totalFare);
     }
+
 }
