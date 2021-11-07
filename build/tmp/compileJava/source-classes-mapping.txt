@@ -1,8 +1,10 @@
-com/invoice/Ride.java
- com.invoice.Ride
-com/invoice/InvoiceService.java
- com.invoice.InvoiceService
 com/invoice/InvoiceSummary.java
  com.invoice.InvoiceSummary
+com/invoice/InvoiceService.java
+ com.invoice.InvoiceService
+com/invoice/CabRide.java
+ com.invoice.CabRide
+com/invoice/Ride.java
+ com.invoice.Ride
 com/invoice/RideRepository.java
  com.invoice.RideRepository

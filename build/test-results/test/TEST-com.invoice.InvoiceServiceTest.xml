@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.invoice.InvoiceServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-11-07T04:14:52" hostname="LAPTOP-GDO34K0C" time="0.079">
+<testsuite name="com.invoice.InvoiceServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-07T05:12:10" hostname="LAPTOP-GDO34K0C" time="0.067">
   <properties/>
-  <testcase name="givenDistanceAndTime_ShouldReturn_TotalFare()" classname="com.invoice.InvoiceServiceTest" time="0.059"/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare()" classname="com.invoice.InvoiceServiceTest" time="0.005"/>
-  <testcase name="givenMultipleRides_ShouldReturn_InvoiceSummary()" classname="com.invoice.InvoiceServiceTest" time="0.005"/>
-  <testcase name="givenUserIDAndRides_ShouldReturn_InvoiceSummary()" classname="com.invoice.InvoiceServiceTest" time="0.003"/>
+  <testcase name="givenUserIDAndRideList_WhenFareCalculatedForNormalRides_ShouldReturnInvoiceSummary()" classname="com.invoice.InvoiceServiceTest" time="0.067"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
