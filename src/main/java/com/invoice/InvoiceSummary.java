@@ -12,7 +12,7 @@ public class InvoiceSummary {
      * Calculate the average fare per ride taking total number of rides and total fare as input
      *
      * @param numberOfRides : Takes number of rides
-     * @param totalFare : Takes Total Fare
+     * @param totalFare     : Takes Total Fare
      */
     public InvoiceSummary(int numberOfRides, double totalFare) {
         this.numberOfRides = numberOfRides;

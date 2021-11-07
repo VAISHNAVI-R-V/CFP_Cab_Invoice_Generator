@@ -1,21 +1,20 @@
 modified:   .gradle/7.0/executionHistory/executionHistory.bin
 modified:   .gradle/7.0/executionHistory/executionHistory.lock
-modified:   .gradle/7.0/fileHashes/fileHashes.bin
-        modified:   .gradle/7.0/fileHashes/fileHashes.lock
-        modified:   .gradle/7.0/fileHashes/resourceHashesCache.bin
-        modified:   .gradle/7.0/javaCompile/classAnalysis.bin
-        modified:   .gradle/7.0/javaCompile/jarAnalysis.bin
-        modified:   .gradle/7.0/javaCompile/javaCompile.lock
-        modified:   .gradle/7.0/javaCompile/taskHistory.bin
-        modified:   .gradle/buildOutputCleanup/buildOutputCleanup.lock
-        modified:   build/classes/java/main/com/invoice/InvoiceGenerator.class
-        modified:   build/classes/java/test/com/invoice/InvoiceServiceTest.class
-        modified:   build/reports/tests/test/classes/com.invoice.InvoiceServiceTest.html
-        modified:   build/reports/tests/test/index.html
-        modified:   build/reports/tests/test/packages/com.invoice.html
-        modified:   build/test-results/test/TEST-com.invoice.InvoiceServiceTest.xml
-        modified:   build/test-results/test/binary/results.bin
-        modified:   build/tmp/compileJava/source-classes-mapping.txt
-        modified:   src/main/java/com/invoice/InvoiceGenerator.java
-        modified:   src/test/java/com/invoice/InvoiceServiceTest.java
-
+modified:   .gradle/7.0/fileHashes/fileHashes.
+modified:   .gradle/7.0/fileHashes/fileHashes.lock
+modified:   .gradle/7.0/fileHashes/resourceHashesCache.bin
+modified:   .gradle/7.0/javaCompile/classAnalysis.bin
+modified:   .gradle/7.0/javaCompile/jarAnalysis.bin
+modified:   .gradle/7.0/javaCompile/javaCompile.lock
+modified:   .gradle/7.0/javaCompile/taskHistory.bin
+modified:   .gradle/buildOutputCleanup/buildOutputCleanup.lock
+modified:   build/classes/java/main/com/invoice/InvoiceGenerator.class
+modified:   build/classes/java/test/com/invoice/InvoiceServiceTest.class
+modified:   build/reports/tests/test/classes/com.invoice.InvoiceServiceTest.html
+modified:   build/reports/tests/test/index.html
+modified:   build/reports/tests/test/packages/com.invoice.html
+modified:   build/test-results/test/TEST-com.invoice.InvoiceServiceTest.xml
+modified:   build/test-results/test/binary/results.bin
+modified:   build/tmp/compileJava/source-classes-mapping.txt
+modified:   src/main/java/com/invoice/InvoiceGenerator.java
+modified:   src/test/java/com/invoice/InvoiceServiceTest.java

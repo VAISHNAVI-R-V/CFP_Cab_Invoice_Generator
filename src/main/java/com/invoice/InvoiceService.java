@@ -6,11 +6,16 @@ package com.invoice;
  * @author VAISHNAVI R VISHWAKARMA
  * @since 2021-11-04
  */
-public class InvoiceGenerator {
+public class InvoiceService {
 
     private static final int COST_PER_TIME = 1;
     private static final double MINIMUM_COST_PER_KILOMETER = 10.0;
     private static final double MINIMUM_FARE = 5;
+    private RideRepository rideRepository;
+
+    public InvoiceService() {
+        this.rideRepository = new RideRepository();
+    }
 
     /**
      * Purpose : To calculate the minimum fare.
@@ -40,4 +45,11 @@ public class InvoiceGenerator {
         return new InvoiceSummary(rides.length, totalFare);
     }
 
+    public void addRide(String userId, Ride[] rides) {
+        rideRepository.addRide(userId, rides);
+    }
+
+    public InvoiceSummary getInvoiceSummary(String userId) {
+        return this.calculateFare(rideRepository.getRides(userId));
+    }
 }
