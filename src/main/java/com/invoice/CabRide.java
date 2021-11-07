@@ -20,7 +20,7 @@ public enum CabRide {
      * @return : the total fare or minimum fare.
      */
     public double calculateCostOfRide(Ride ride) {
-        double totalFare = ride.distance * costPerKm + ride.time * costPerMin;
-        return Math.max(totalFare, minimumFarePerRide);
+        double rideCost = ride.distance * costPerKm + ride.time * costPerMin;
+        return Math.max(rideCost, minimumFarePerRide);
     }
 }

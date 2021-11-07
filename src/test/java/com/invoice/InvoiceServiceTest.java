@@ -8,7 +8,7 @@ public class InvoiceServiceTest {
     InvoiceService invoiceService = null;
 
     @BeforeEach
-    void setUp() throws Exception {
+    void setUp()  {
         invoiceService = new InvoiceService();
     }
 
@@ -29,15 +29,6 @@ public class InvoiceServiceTest {
         Assertions.assertEquals(5, fare, 0.0);
     }
 
-    //    @Test
-//    void givenMultipleRides_ShouldReturn_TotalFare() {
-//        Ride[] rides = {
-//                new Ride(2.0, 5),
-//                new Ride(0.1, 1)
-//        };
-//        double fare = invoiceGenerator.calculateFare(rides);
-//        Assertions.assertEquals(30, fare, 0.0);
-//    }
     @Test
     void givenMultipleRides_ShouldReturn_InvoiceSummary() {
         Ride[] rides = {
@@ -67,15 +58,30 @@ public class InvoiceServiceTest {
     }
 
     @Test
-    void givenUserIDAndRideList_WhenFareCalculatedForNormalRides_ShouldReturnInvoiceSummary() {
-        Ride[] rides = {new Ride(CabRide.NORMAL, 2.0, 5),
-                new Ride(CabRide.NORMAL, 0.1, 1),
-                new Ride(CabRide.NORMAL, 1.0, 5)
+    void givenUserIDAndRideList_WhenCalculatedFareForNormalRides_ShouldReturnInvoiceSummary() {
+        Ride[] rides = {
+                new Ride(CabRide.NORMAL, 3.0, 4),
+                new Ride(CabRide.NORMAL, 0.4, 1),
+                new Ride(CabRide.NORMAL, 6.0, 5)
         };
-        String userId = "CRN 1002";
+        String userId = "vrv 21";
         invoiceService.addRide(userId, rides);
         InvoiceSummary invoiceSummary = invoiceService.getInvoiceSummary(userId);
-        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(3, 45.0);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(3, 104.0);
+        Assertions.assertEquals(expectedInvoiceSummary, invoiceSummary);
+    }
+
+    @Test
+    void givenUserIDAndRideList_WhenCalculatedFareForPremiumRides_ShouldReturnInvoiceSummary() {
+        Ride[] rides = {
+                new Ride(CabRide.PREMIUM, 4.0, 8),
+                new Ride(CabRide.PREMIUM, 0.7, 2),
+                new Ride(CabRide.PREMIUM, 1.0, 12)
+        };
+        String userId = "vsrv 100";
+        invoiceService.addRide(userId, rides);
+        InvoiceSummary invoiceSummary = invoiceService.getInvoiceSummary(userId);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(3, 135.0);
         Assertions.assertEquals(expectedInvoiceSummary, invoiceSummary);
     }
 }
